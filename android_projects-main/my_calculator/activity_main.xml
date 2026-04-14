@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIME : 05"
+        android:textColor="#FF0000"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" /> <TextView
+    android:id="@+id/tv_score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="SCORE : 00"
+    android:textColor="#FF0000"
+    android:textSize="30sp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true" /> <TextView
+    android:id="@+id/tv_question"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="11+64\n=75"
+    android:textSize="40sp"
+    android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+        android:id="@+id/btn_correct"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="✔"
+        android:textSize="24sp"
+        android:backgroundTint="#D32F2F"
+        android:layout_marginRight="1dp" />
+
+        <Button
+            android:id="@+id/btn_wrong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="✘"
+            android:textSize="24sp"
+            android:backgroundTint="#D32F2F" />
+
+    </LinearLayout>
+
+</RelativeLayout>
